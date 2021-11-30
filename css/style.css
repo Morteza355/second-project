@@ -1,12 +1,15 @@
 @import url(font-awesome.min.css);
+@font-face {
+    font-family: "RaleWay";
+    src: url(../fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
 *{
     margin: 0 auto;
     font-size: 14px;
     color: #333;
 }
-.icon{
-    font-family: FontAwesome;
-    font-style: normal;
+body{
+    font-family: "RaleWay";
 }
 .clear-fix{
     clear: both;
@@ -26,32 +29,83 @@
     font-weight: bold;
 }
 .title:after{
+    content: "";
+    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    content: "";
     height: 1px;
-    background-color: #474747;
-    position: absolute;
+    background-color: #a7a7a7;
 }
 .title:before{
-    width: 80px;
+    position: absolute;
     bottom: 0;
+    width: 80px;
     content: "";
     height: 6px;
     background-color: #f98500;
-    position: absolute;
     z-index: 1;
 }
+
+/* -------------------- */
 .article-title{
-    transition: color 0.3s ease 0s;
-    position: relative;
-    margin-bottom: 20px;
+    padding-top: 20px;
 }
-.article-title:hover{
+.article-title a{
+    font-size: 20px;
+    font-weight: 700;
+}
+.info-bar{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 0;
+}
+.info-bar li{
+    display: inline-block;
+    margin-right: 20px;
+    line-height: 25px;
+}
+.text-muted{
+    color: #888;
+}
+.text-yellow{
     color: #f98500;
 }
-.footer-icon{
+a{
+    text-decoration: none;
+    transition: all 0.2s ease 0s;
+}
+b{
+    transition: all 0.2s ease 0s;
+    font-weight: 700;
+}
+a:hover{
     color: #f98500;
-    margin-left: 25px;
+}
+a:hover > b {
+    color: #f98500;
+}
+.app{
+    width: 1200px;
+}
+@media  (max-width: 1199.99px){
+    .app{
+        width: 992px;
+    } 
+}
+@media  (max-width: 991.99px){
+    .app{
+        width: 768px;
+    } 
+}
+@media  (max-width: 767.99px){
+    .app{
+        width: 576px;
+    } 
+}
+@media  (max-width: 575.99px){
+    .app{
+        width: calc(100% - 30px);
+        padding: 0 15px;
+    } 
 }
