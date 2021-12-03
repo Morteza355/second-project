@@ -348,36 +348,40 @@ a:hover > b {
 .main-news-w-50:nth-of-type(2){
     margin-right: 0;
 }
-.container-side-bar{
+.side-bar{
     float: right;
-    width: calc(calc(100% / 3) - 20px);
+    width: calc(calc(100% / 3) - 25px); 
+}
+.side-bar-item{
+    width: 100%;
 }
 .btc-price{
-    background-color: #f98500;
+    list-style: none;
     text-align: center;
-    margin-bottom: 35px;
-}
-.btc-price > *{
-    border-bottom: 1px solid #fff;
-    padding: 15px 10px;
-}
-.popular-images{
-    float: left;
-    margin-right: 20px;
-}
-.article-title-popular-posts{
+    background-color: #f98500;
     padding: 0;
-    margin-bottom: 13px;
+    margin-bottom: 40px;
 }
-.article-title-popular-posts a{
-    font-size: 16px;
+.btc-price li{
+    padding: 15px 0px;
+    border-bottom: 1px solid #fff;
 }
-.info-bar-popular-posts{
-    padding-bottom: 0;
-    padding-top: 0px;
+.popular-post{
+    width: 100%;
+    margin-bottom: 20px;
 }
-.article-popular-posts{
-    margin-bottom: 30px;
+.popular-post-img{
+    height: 100px;
+    width: 100px;
+    float: left;
+}
+.popular-post-title{
+    width: calc(100% - 120px);
+    float: right;
+    margin-left: 20px;
+}
+.popular-post-title h3 a{
+    font-size: 17px;
 }
 .news-letter-form{
     width: 100%;
@@ -405,7 +409,7 @@ a:hover > b {
         width: 100%;
         float: none;
     }
-    .container-side-bar{
+    .side-bar{
         width: 100%;
     }
 }
@@ -414,4 +418,7 @@ a:hover > b {
         width: 100%;
         float: none;
     }
+}
+.app-footer{
+    background-color: rgb(32, 32, 32);
 }
